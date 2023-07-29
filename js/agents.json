@@ -1,14 +1,14 @@
 [
     { "name": "Jett", "image": "../images/Jett.png", "info": "../agents/Jett.html" },
-    { "name": "Cypher", "image": "./images/Cypher.png", "info": "./agents/Cypher.html" },
-    { "name": "Breach", "image": "./images/Breach.png", "info": "./agents/Breach.html" },
-    { "name": "Brimstone", "image": "./images/Brimstone.png", "info": "./agents/Brimstone.html" },
-    { "name": "Killjoy", "image": "./images/Killjoy.png", "info": "./agents/Killjoy.html" },
-    { "name": "Omen", "image": "./images/Omen.png", "info": "./agents/Omen.html" },
-    { "name": "Phoenix", "image": "./images/Phoenix.png", "info": "./agents/Phoenix.html" },
-    { "name": "Raze", "image": "./images/Raze.png", "info": "./agents/Raze.html" },
-    { "name": "Reyna", "image": "./images/Reyna.png", "info": "./agents/Reyna.html" },
-    { "name": "Sage", "image": "./images/Sage.png", "info": "./agents/Sage.html" },
-    { "name": "Sova", "image": "./images/Sova.png", "info": "./agents/Sova.html" },
-    { "name": "Viper", "image": "./images/Viper.png", "info": "./agents/Viper.html" }
+    { "name": "Cypher", "image": "../images/Cypher.png", "info": "../agents/Cypher.html" },
+    { "name": "Breach", "image": "../images/Breach.png", "info": "../agents/Breach.html" },
+    { "name": "Brimstone", "image": "../images/Brimstone.png", "info": "../agents/Brimstone.html" },
+    { "name": "Killjoy", "image": "../images/Killjoy.png", "info": "../agents/Killjoy.html" },
+    { "name": "Omen", "image": "../images/Omen.png", "info": "../agents/Omen.html" },
+    { "name": "Phoenix", "image": "../images/Phoenix.png", "info": "../agents/Phoenix.html" },
+    { "name": "Raze", "image": "../images/Raze.png", "info": "../agents/Raze.html" },
+    { "name": "Reyna", "image": "../images/Reyna.png", "info": "../agents/Reyna.html" },
+    { "name": "Sage", "image": "../images/Sage.png", "info": "../agents/Sage.html" },
+    { "name": "Sova", "image": "../images/Sova.png", "info": "../agents/Sova.html" },
+    { "name": "Viper", "image": "../images/Viper.png", "info": "../agents/Viper.html" }
 ]

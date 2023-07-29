@@ -1,0 +1,7 @@
+[
+    { "name": "Ascent", "image": "../images/Ascent.png", "info": "info_de_Ascent" },
+    { "name": "Bind", "image": "../images/Bind.png", "info": "info_de_Bind" },
+    { "name": "Icebox", "image": "../images/Icebox.png", "info": "info_de_Icebox" },
+    { "name": "Split", "image": "../images/Split.png", "info": "info_de_Split" },
+    { "name": "Haven", "image": "../images/Haven.png", "info": "info_de_Haven" }
+]

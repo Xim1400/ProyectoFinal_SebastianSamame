@@ -205,6 +205,12 @@ footer {
     margin-top: 10px;
 }
 
+.agent-card a {
+    color: inherit;  /* Esto hará que el color del texto sea el mismo que el de su contenedor. */
+    text-decoration: none;  /* Esto eliminará el subrayado. */
+}
+    
+
 #random-agent-container img {
     width: 150px;
     height: auto;

@@ -1,17 +1,21 @@
-let maps = [
-    { name: 'Ascent', image: './images/Ascent.png', info: 'info_de_Ascent' },
-    { name: 'Bind', image: './images/Bind.png', info: 'info_de_Bind' },
-    { name: 'Icebox', image: './images/Icebox.png', info: 'info_de_Bind' },
-    { name: 'Split', image: './images/Split.png', info: 'info_de_Bind' },
-    { name: 'Haven', image: './images/Haven.png', info: 'info_de_Bind' },
-];
+let maps = [];
+
+function loadMaps(jsonFile, containerId) {
+    fetch(jsonFile)
+        .then(response => response.json())
+        .then(data => {
+            displayMaps(data, containerId);
+            maps = data;
+        })
+        .catch(error => console.error('Error:', error));
+}
 
 window.onload = () => {
-    displayMaps(maps);
+    loadMaps('/js/maps.json', 'maps-list');
 };
 
-function displayMaps(mapsToDisplay) {
-    const mapsList = document.getElementById('maps-list');
+function displayMaps(mapsToDisplay, containerId) {
+    const mapsList = document.getElementById(containerId);
     mapsList.innerHTML = '';
 
     mapsToDisplay.forEach(map => {
@@ -38,9 +42,8 @@ searchInput.addEventListener('input', () => {
     const filteredMaps = maps.filter(map => 
         map.name.toLowerCase().includes(searchText)
     );
-    displayMaps(filteredMaps);
+    displayMaps(filteredMaps, 'maps-list');
 });
-
 
 
 function getRandomMap() {
@@ -49,7 +52,6 @@ function getRandomMap() {
     shufflingDiv.innerHTML = '';
     selectedDiv.innerHTML = '';
 
-    // Insertar las imágenes de los mapas en shufflingDiv.
     maps.forEach((map) => {
         const mapImg = document.createElement('img');
         mapImg.src = map.image;
@@ -57,14 +59,12 @@ function getRandomMap() {
         shufflingDiv.appendChild(mapImg);
     });
 
-    // Crear un efecto de "mezcla" cambiando la visibilidad de las imágenes.
     const shufflingInterval = setInterval(() => {
         shufflingDiv.childNodes.forEach((img) => {
             img.style.visibility = Math.random() < 0.5 ? 'visible' : 'hidden';
         });
     }, 100);
 
-    // Después de 3 segundos, detener la "mezcla" y mostrar el mapa seleccionado.
     setTimeout(() => {
         clearInterval(shufflingInterval);
         shufflingDiv.innerHTML = '';
@@ -74,7 +74,6 @@ function getRandomMap() {
         selectedMapImg.alt = maps[randomIndex].name;
         selectedDiv.appendChild(selectedMapImg);
 
-        // Añadir el nombre del mapa debajo de la imagen.
         const mapName = document.createElement('h2');
         mapName.textContent = maps[randomIndex].name;
         selectedDiv.appendChild(mapName);
