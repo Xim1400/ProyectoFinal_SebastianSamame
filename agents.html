@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Wiki - Agentes</title>
+    <link rel="icon" href="/images/valorant-logo.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/images/valorant-logo.png" alt="Logo Valorant" id="logo">
+        <h1>Valorant Wiki</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="agents.html">Agentes</a>
+            <a href="maps.html">Mapas</a>
+            <a href="weapons.html">Armas</a>
+            <a href="skins.html">Skins</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Encuentra a tu agente</h2>
+        <input type="text" id="search-input" placeholder="Escribe el nombre del agente aquí...">
+        <button id="random-agent">¿No sabes qué agente usar? Haz click aquí.</button>
+        <div id="random-agent-container"></div>
+        <div id="agents-list">
+            <h2>Agentes</h2>
+            <div class="agents-container" id="agents-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Valorant Wiki © 2023</p>
+    </footer>
+
+    <script src="/js/agents.js"></script>
+</body>
+</html>
