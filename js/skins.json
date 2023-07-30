@@ -1,0 +1,14 @@
+[
+    { "name": "Titanmail", "image": "../images/Titanmail.png", "price": "1460" },
+    { "name": "Silvanus", "image": "../images/Silvanus.png", "price": "2800" },
+    { "name": "Nebula", "image": "../images/Nebula.png", "price": "1920" },
+    { "name": "Glitchpop", "image": "../images/Glitchpop.png", "price": "3450" },
+    { "name": "Valorant Go", "image": "../images/Valorantgo.png", "price": "1850" },
+    { "name": "Protocol 781-A", "image": "../images/Protocol 781-A.png", "price": "1230" },
+    { "name": "Elderflame", "image": "../images/Elderflame.png", "price": "4000" },
+    { "name": "Soulstrife", "image": "../images/Soulstrife.png", "price": "3000" },
+    { "name": "Zedd x Valorant", "image": "../images/Zedd.png", "price": "1800" },
+    { "name": "Radiant Entertaiment", "image": "../images/Radiantentertaiment.png", "price": "1200" },
+    { "name": "Araxys", "image": "../images/Araxys.png", "price": "2000" },
+    { "name": "Ruination", "image": "../images/Ruination.png", "price": "2400" }
+]

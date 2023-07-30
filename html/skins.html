@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skins - Valorant Info</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="../images/valorant-logo.png" alt="Logo">
+        <h1>Valorant Wiki</h1>
+        <nav>
+            <a href="index.html">Inicio</a>|
+            <a href="agents.html">Agentes</a>|
+            <a href="maps.html">Mapas</a>
+        </nav>
+        <div id="cart-button-container">
+            <button id="cart-button">Carrito (0)</button>
+        </div>
+    </header>
+    <main>
+        <h1 class="page-title">Skins</h1>
+        <section id="skins-section">
+            <div id="skins-container" class="card-container"></div>
+        </section>
+    </main>
+    <div id="cart-modal">
+        <div id="cart-modal-content">
+            <h2>Tu Carrito</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">Total: $0</div>
+            <button id="close-cart-button">Cerrar</button>
+        </div>
+    </div>
+    <footer>
+        Valorant Info &copy; 2023
+    </footer>
+    <script src="../js/skins.js"></script>
+</body>
+</html>

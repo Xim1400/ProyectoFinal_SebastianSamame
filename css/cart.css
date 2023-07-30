@@ -1,0 +1,150 @@
+.skin-card {
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.skin-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.skin-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f04f24;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.skin-card button:hover {
+    background-color: #c13c1a;
+}
+
+#cart-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+#cart-button:hover {
+    background-color: #0056b3;
+}
+
+#cart-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#cart-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-price {
+    color: #007bff;
+}
+
+#cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+#close-cart-button {
+    color: #383838;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+#close-cart-button:hover,
+#close-cart-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#cart-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+#cart-button:hover {
+    background-color: #0056b3;
+}
+
+#cart-display {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

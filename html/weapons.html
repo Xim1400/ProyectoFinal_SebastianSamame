@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armas - Valorant Info</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="../images/valorant-logo.png" alt="Logo">
+        <h1>Valorant Wiki</h1>
+        <nav>
+            <a href="index.html">Inicio</a>|
+            <a href="agents.html">Agentes</a>|
+            <a href="maps.html">Mapas</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="page-title">Weapons</h1>
+
+        <section id="price-filter-section">
+            <h2>Filtrar por Precio</h2>
+            <div class="filter-container">
+                <label for="price-filter">Precio máximo:</label>
+                <input type="range" id="price-filter" min="0" max="5000" step="100" value="5000">
+                <p>Precio máximo actual: $<span id="price-display">5000</span></p>
+            </div>
+        </section>
+
+        <div id="type-filter" class="filter-container">
+            <label for="type-input">Tipo:</label>
+            <select id="type-input">
+                <option value="all">Todas</option>
+                <option value="armas_de_mano">Armas de mano</option>
+                <option value="Subfusiles">Subfusiles</option>
+                <option value="Escopetas">Escopetas</option>
+                <option value="Rifles">Rifles</option>
+                <option value="Fusiles">Fusiles</option>
+                <option value="armas_pesadas">Armas pesadas</option>
+            </select>
+        </div>
+        
+        
+        <section id="weapons-section">
+            <div id="weapons-container" class="card-container"></div>
+        </section>
+
+
+    </main>
+    <footer>
+        Valorant Info &copy; 2023
+    </footer>
+    <script src="../js/weapons.js"></script>
+</body>
+</html>
